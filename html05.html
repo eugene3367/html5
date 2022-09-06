@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표)</title>
+</head>
+<body>
+    <h2>테이블(표)</h2>
+    <div class="table_wrap"><!--div.table_wrap + 탭-->
+        <table border="1" cellspacing="0" cellpadding="8"><!--border: 선의두께, cellspacing: 셀과셀사이의여백, cellpadiing: 셀안쪽여백-->
+        <!--table>caption+thead+tbody+tfoot + 탭 (없어지면 ctlr+space bar)-->
+            <caption>자바웹반 중간성적표</caption><!--표캡션-->
+            <thead>
+                <tr>
+                    <th>번호</th><!--두꺼운글씨-->
+                    <th>성명</th>
+                    <th>응용SW기초활용</th>
+                    <th>개발자환경구축</th>
+                </tr>
+            </thead>            
+            <tbody>
+                <tr><td>한태헌</td><td>90</td><td>80</td></tr><!--td: 테이블데이터-->
+                <tr><td>김태엽</td><td>100</td><td>70</td></tr>
+                <tr><td>정진석</td><td>80</td><td>90</td></tr>
+                <tr><td>안효준</td><td>100</td><td>100</td></tr>
+                <tr><td>조민재</td><td>80</td><td>80</td></tr>
+                <tr><td>김지훈</td><td colspan ="2">90</td></tr>    <!--colspan : 행합치기, rowspan : 열합치기-->
+            </tbody>
+            <tfoot><!--집계태그-->
+                <tr><th colspan ="2">합계</th><td rowspan = "2">420</td><td rowspan="2">390</td></tr>
+                <tr><th colspan ="2">집계</th></tr>
+            </tfoot>
+        </table> 
+    </div>
+</body>
+</html>
